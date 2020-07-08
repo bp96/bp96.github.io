@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html translate="no">
+<head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Brijesh Patel | Developer</title>
+<meta name="keywords" content="bp96, Brijesh Patel, developer, analyst, engineer, programmer" />
+<meta name="description" content="[Brijesh Patel | Developer" />
+
+<!-- Required librarys -->
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/> -->
+
+<link rel="stylesheet" href="css/animate.css">
+
+
+</head>
+<body>
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="assets/london_timelapse.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1>Hi, I'm Brijesh.</h1>
+        <h2>Welcome to my portfolio.</h2>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <!-- **** About Section **** -->
+    <section id="about" class="wow fadeInLeft">
+      <div class="container">
+        <h2 class="section-title text-center">
+          ABOUT ME
+        </h2>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div >
+              <img
+                height="auto"
+                width="300px"
+                src="./assets/profile.jpg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class='text-justify'>
+              <p >
+              	<br>
+
+                Since graduating from the University of Manchester, I have worked as a developer on several machine learning projects, mostly using keras/tensorflow packages, as you will see below. Throughout my degree and the job I've had since, I have gained technical experience and am now, out of my own personal interest, currently learning SQL and web development (including HTML, CSS and Javascript) too. I'm a naturally curious, adaptable person who has worked independently on projects, within teams and, on occassion, assisted with managing projects too. I am a quick learner and an excellent communicator too; I have written reports and given presentations aimed at people from all sorts of backgrounds and levels, both technical and non-technical.
+
+              <div class='btn-div'>
+                <!-- <a target="_blank" class="btn btn-danger btn-lg" href="#!">
+                  View CV
+                </a> -->
+                <a class="btn btn-danger btn-lg" href="#contact">
+                  Contact Me
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title text-center">
+            PROJECTS
+          </h2>
+
+          <!-- Each .row is a project -->
+          <div class="row project-row wow fadeInLeft">
+            <div class="col-lg-4 col-sm-12">
+              <div >
+                <h3 >Cervical tumour segementation using deep learning</h3>
+                <div>
+                  <p class="mb-4 text-justify">
+                    This was my Master's project conducted at the University of Manchester with collaboration with The Christie NHS Foundation Trust. The first part involved setting up a project pipeline to read in MRI image files (in NIfTI file format), pre-process it and store for use with a package called radiomics - a method to extract a large number of features. 
+                    <br>
+                    <br>
+                    The second part involved the the use of a U-Net style convolutional neural network (CNN) to employ deep learning; this was used to segment the cancerous regions - gross tumour volume (GTV) which indicates the visible, macroscopic spread, and clinical tumour volume (CTV), which includes the GTV plus some of the surrounding area (containing possible microscopic spread). 
+                    <br>
+                    <br>
+                    GTV segmentation had also never done before using deep learning for this type of cancer at this time. The technique employed transfer learning (due to the limited dataset of cervical cancer images) using the ImageNet database and in the end, accuracies of 55-80% were obtained in identifying the correct GTV/CTV regions. This project was predominantly Python-based though some MATLAB and Lua code had to be written as well.
+                  </p>
+                </div>
+                <div class='btn-div'>
+                <a target="_blank" class="btn btn-primary btn-lg" href="https://github.com/bp96/UoM-4th-Year-MPhys-Project">
+                  View Code
+                </a>
+            	</div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div>
+              	  <video autoplay="autoplay" muted="muted" loop="loop" width="70%" class='gtv-video'>
+				    <source src="assets/GTV-video-crop.mp4" type="video/mp4">
+				  </video>
+                  <div data-tilt>
+                    <img class="img-fluid" src="./assets/GTV_CTV_contours.png" />
+                    <img class="img-fluid" src="./assets/CTV_GTV_colour.png" />
+                  </div>
+                <br />
+                <p class='text-justify'> Top figure and video shows the contours predicted for the GTV regions of a test MRI dataset. The DICE coefficients calculated indicate level of overlap between predictions and actual delineations with a value of 1 indicating maximum overlap. Middle figure shows the GTV (red) and CTV (yellow) delineations used for training. Bottom figure shows the overlap between the predictions (orange) and real (yellow) for the CTV region.  </p>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row project-row wow fadeInLeft">
+            <div class="col-lg-4 col-sm-12">
+              <div >
+                <h3>Marine mammal audio classification using deep learning</h3>
+                <div>
+                  <p class="mb-4 text-justify">
+                    After conducting research, a suitable CNN architecture was found and then coded up in Keras/tensorflow. The Watkins Mammal Database (containing around 40 mammals in total) with audio clips from different years were scraped from the site, collected, pre-processed and 6 types of audio features were then fed into a state-of-the-art model. 
+                    <br>
+                    <br>
+                    The model on the whole did very well with accuracies of 93% obtained by the model in classifying between the mammals in the test set. The model struggled with mammals which had the fewest audio clips (as the model did not have enough examples to learn enough features). 
+                    <br>
+                    <br>
+                    The same architecture was then tested for the Kaggle Right Whale Detection challenge that aimed to classify between sounds of right whales and other sounds (e.g. boats, propellers, other whales), achieving an accuracy of 85%; this was impressive as top-performing methods required significantly more work with more manual processing, which this model did not require. The code was writen completely in Python.
+                  </p>
+                </div>
+                <div class='btn-div'>
+                <a target="_blank" class="btn btn-primary btn-lg" href="https://github.com/bp96/audio-classification">
+                  View Code
+                </a>
+            	</div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div>
+                <a >
+                  <div data-tilt>
+                    <img src="./assets/watkins_database.png" />
+                    <img src="./assets/whales_confusion_matrix.png" />
+                  </div>
+                </a>
+                <br />
+                <p class='text-justify'>The Watkins marine mammal database (top) from which data was scraped and was classfied, producing a confusion matrix of which a small sample is shown here.</p>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row project-row wow fadeInLeft">
+            <div class="col-lg-4 col-sm-12">
+              <div >
+                <h3 >Radio frequency signal classification using deep learning</h3>
+                <div>
+                  <p class="mb-4 text-justify">
+                    Radio frequency (RF) signals can be described by I/Q data (which contains information on the amplitude and phase). In this project, a CNN and LSTM structure was developed in Keras/Tensorflow respectively to test out the classification performance. 
+                    <br>
+                    <br>
+                    Signals used were of different modulations (QPSK, BPSK, 16QAM, 8PSK, DQPSK) and using raw I/Q data, the models were trained. The CNN seemed to show far superior performance compared to the LSTM and the data used was synthetically generated using MATLAB (and the RF toolbox). The confusion matrices plotted showed that there was very high classification accuracy between the 5 signals of 95%. 
+                    <br>
+                    <br>
+                    Another idea explored was to see if the models could train on anomaly detection where one signal may be QPSK and another may be QPSK, mixed with another signal of lower intensity (an anomaly). The CNN showed superior performance to the LSTM again, and the resulting confusion matrices showed accuracies in the 92-99% region, depending on the signal pair. The code was written completely in Python, though some MATLAB was written for the synthetic signal generation.
+                  </p>
+                </div>
+                <div class='btn-div'>
+                <a target="_blank" class="btn btn-primary btn-lg" href="https://github.com/bp96/radio-cnn">
+                  View Code
+                </a>
+            	</div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div>
+                  <div data-tilt>
+                    <img src="./assets/signal_diagram.png" />
+                  </div>
+                <br />
+                <p class='text-justify'>A diagram showing the overall objective of the project to classify modulations in a given frequency band, whilst identifying any anomalies that pop up.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- /END Project -->
+
+                    <!-- Each .row is a project -->
+<!--           <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Google Mock-up</h3>
+                <div>
+                  <p class="mb-4">
+                    A mini fun project where I tried to replicate the appearance of the Google homepage using HTML and CSS.
+                  </p>
+                </div>
+             
+                <a target="_blank" class="cta-btn cta-btn--hero" href="x">
+                  View Code
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                  See Live
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="#!" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/banner.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title text-center">
+          CONTACT
+        </h2>
+        <div class="text-center">
+          <p >
+            Click one of the buttons below if you wish to contact me or please send an email to brijp019@gmail.com.
+          </p>
+          	<div class="social-links">
+          	  <a href="mailto:brijp019@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-inverse"></i></a>
+	          <a href="https://uk.linkedin.com/in/brijesh-patel-2910" target="_blank"> <i class="fa fa-linkedin fa-inverse"></i> </a>
+	          <a href="https://github.com/bp96" target="_blank"> <i class="fa fa-github fa-inverse"></i> </a>
+	         </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer text-center">
+        <a href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+    </footer>
+    <!-- /END Footer Section -->
+
+
+<!-- Javascript scripts -->
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,137 @@
+header {
+  position: relative;
+  background-color: black;
+  height: 90vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+video{
+  margin-top: 100px;
+}
+header h1{
+  font-size: 5em;
+}
+
+header h2{
+  font-size: 2em;
+}
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+  z-index: 1;
+}
+
+
+.section-title{
+  font-family: 'Roboto', sans-serif;
+  padding-top: 20px;
+}
+.project-row{
+  padding-bottom: 25px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+img{
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+.btn-div{
+  text-align: center;
+  padding: 5px;
+}
+
+.gtv-video{
+  display: block;
+  margin:auto;
+}
+
+#about {
+    background-image: linear-gradient(135deg,  #000080 0%, #00cdac 100%);
+    color: #fff;
+    height: 100%;
+    border-top: 0px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    padding-bottom: 10%;
+}
+
+#contact {
+    background-color: #02aab0;
+    background-image: linear-gradient(135deg, #000080 0%, #00cdac 100%);
+    -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+    padding: 10rem 0 10rem 0;
+    color: #fff;
+}
+
+.footer {
+    background-color: #333333;
+    color: #fff;
+    padding: 2.8rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+#about {
+    background-image: linear-gradient(135deg, #3151ED 0%, #00cdac 100%);
+    color: #fff;
+    height: 100%;
+    border-top: 0px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    padding-bottom: 10%;
+}
+  header h1{
+    font-size: 3em;
+    text-align: right;
+  }
+
+  header h2{
+    font-size: 2em;
+    text-align: right;
+  }
+
+  video{
+    margin-left: 200px;
+  }
+}
+
+.social-links a {
+    flex-direction: column;
+    color: #fff;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    margin: 1.6rem;
+    transition: all .2s ease-in;
+}
