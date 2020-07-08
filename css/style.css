@@ -7,14 +7,16 @@ header {
   overflow: hidden;
 }
 video{
-  margin-top: 100px;
+  margin-top: 0;
 }
 header h1{
   font-size: 5em;
+  margin-bottom: 5rem;
 }
 
 header h2{
   font-size: 2em;
+  margin-bottom: 8em;
 }
 header video {
   position: absolute;
@@ -114,15 +116,18 @@ img{
   header h1{
     font-size: 3em;
     text-align: right;
+    margin-bottom: 3rem;
   }
 
   header h2{
     font-size: 2em;
     text-align: right;
+    margin-bottom: 7em;
   }
 
   video{
-    margin-left: 200px;
+    max-height: 100%;
+    margin-top:0;
   }
 }
 
