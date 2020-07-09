@@ -49,6 +49,10 @@ header .overlay {
   z-index: 1;
 }
 
+h3{
+  text-align: justify;
+  hyphens: manual;
+}
 
 .section-title{
   font-family: 'Roboto', sans-serif;
