@@ -49,10 +49,6 @@ header .overlay {
   z-index: 1;
 }
 
-h3{
-  text-align: justify;
-  hyphens: manual;
-}
 
 .section-title{
   font-family: 'Roboto', sans-serif;
@@ -62,9 +58,7 @@ h3{
   padding-bottom: 25px;
 }
 
-.text-justify {
-  text-align: justify;
-}
+
 
 img{
   display: block;
