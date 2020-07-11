@@ -59,7 +59,7 @@
               <p >
               	<br>
 
-                Since graduating from the University of Manchester with a degree in Physics, I have worked as a developer on several machine learning projects, mostly using keras/tensorflow packages, as you will see below. Throughout my degree and the job I've had since, I have gained technical experience and am now, out of my own personal interest, currently learning SQL and web development (including HTML, CSS and Javascript) too. I'm a naturally curious, adaptable person who has worked independently on projects, within teams and, on occassion, assisted with managing projects too. I am a quick learner and an excellent communicator too; I have written reports and given presentations aimed at people from all sorts of backgrounds and levels, both technical and non-technical.
+                Since graduating from the University of Manchester with a degree in Physics, I have worked as a developer on several machine learning projects, mostly using keras/tensorflow packages, as you will see below. Throughout my degree and the job I've had since, I have gained technical experience and am now, out of my own personal interest, currently learning SQL and web development (including HTML, CSS and Javascript) too. I'm a naturally curious, adaptable person who has worked independently on projects, within teams and, on occassion, assisted with managing projects as well. I am a quick learner and an excellent communicator too, and have written reports and given presentations aimed at people from all sorts of backgrounds and levels, both technical and non-technical.
 
               <div class='btn-div'>
                 <!-- <a target="_blank" class="btn btn-danger btn-lg" href="#!">
@@ -88,16 +88,16 @@
           <div class="row project-row wow fadeInLeft">
             <div class="col-lg-4 col-sm-12">
               <div >
-                <h3>Cervical tumour segment&shy;ation using deep learning</h3>
+                <h3>Cervical cancer tumour segment&shy;ation using deep learning</h3>
                 <div>
                   <p class="mb-4 ">
-                    This was my Master's project conducted at the University of Manchester with collaboration with The Christie NHS Foundation Trust. The first part involved setting up a project pipeline to read in MRI image files (in NIfTI file format), pre-process it and store for use with a package called radiomics - a method to extract a large number of features. 
+                    This was my Master's project conducted at the University of Manchester with collaboration with The Christie NHS Foundation Trust. The first part involved setting up a project pipeline to read in MRI image files (in NIfTI file format), pre-process them and storing these images. These were then used for large feature extraction using a package called radiomics. 
                     <br>
                     <br>
-                    The second part involved the the use of a U-Net style convolutional neural network (CNN) to employ deep learning; this was used to segment the cancerous regions - gross tumour volume (GTV) which indicates the visible, macroscopic spread, and clinical tumour volume (CTV), which includes the GTV plus some of the surrounding area (containing possible microscopic spread). 
+                    The second part involved using the above pipeline, and a U-Net style convolutional neural network (CNN) to employ deep learning; this was used to segment two main defined cancerous regions - the gross tumour volume (GTV) which indicates the visible, macroscopic spread, and clinical tumour volume (CTV), which includes the GTV plus some of the surrounding area (containing possible microscopic spread). 
                     <br>
                     <br>
-                    GTV segmentation had also never done before using deep learning for this type of cancer at this time. The technique employed transfer learning (due to the limited dataset of cervical cancer images) using the ImageNet database and in the end, accuracies of 55-80% were obtained in identifying the correct GTV/CTV regions. This project was predominantly Python-based though some MATLAB and Lua code had to be written as well.
+                    GTV segmentation had also never done before using deep learning for cervical cancer at the time. The technique employed transfer learning using the ImageNet database (due to the limited size of the dataset of cervical cancer images) and in the end, accuracies of 55-80% were obtained in identifying the correct GTV/CTV regions. This project was predominantly Python-based though some MATLAB and Lua code had to be written as well. For future work, it would also be possible to repeat this technique on other sets of clinical images.
                   </p>
                 </div>
                 <div class='btn-div'>
@@ -130,13 +130,13 @@
                 <h3>Marine mammal audio classifi&shy;cation using deep learning</h3>
                 <div>
                   <p class="mb-4 ">
-                    After conducting research, a suitable CNN architecture was found and then coded up in Keras/tensorflow. The Watkins Mammal Database (containing around 40 mammals in total) with audio clips from different years were scraped from the site, collected, pre-processed and 6 types of audio features were then fed into a state-of-the-art model. 
+                    After conducting research, a suitable CNN architecture was found and then coded up in keras/tensorflow. The Watkins Mammal Database (containing around 40 mammals in total) with audio clips from different years were scraped from the site, collected, pre-processed and 6 types of audio features were then fed into a state-of-the-art model. 
                     <br>
                     <br>
-                    The model on the whole did very well with accuracies of 93% obtained by the model in classifying between the mammals in the test set. The model struggled with mammals which had the fewest audio clips (as the model did not have enough examples to learn enough features). 
+                    The model on the whole did very well with accuracies of 93% obtained in classifying between the different mammals in the test set. The model struggled with mammals which had the fewest audio clips (as the model did not have enough examples to learn enough features). 
                     <br>
                     <br>
-                    The same architecture was then tested for the Kaggle Right Whale Detection challenge that aimed to classify between sounds of right whales and other sounds (e.g. boats, propellers, other whales), achieving an accuracy of 85%; this was impressive as top-performing methods required significantly more work with more manual processing, which this model did not require. The code was writen completely in Python.
+                    The same architecture was then tested for the Kaggle Right Whale Detection challenge that aimed to classify between sounds of right whales and other sounds (e.g. boats, propellers, other whales), achieving an accuracy of 85%; this was impressive as top-performing methods from the challenge required significantly more work with more manual processing, which this model did not require. The code was writen completely in Python.
                   </p>
                 </div>
                 <div class='btn-div'>
@@ -168,10 +168,10 @@
                 <h3 >Radio frequency signal classifi&shy;cation using deep learning</h3>
                 <div>
                   <p class="mb-4 ">
-                    Radio frequency (RF) signals can be described by I/Q data (which contains information on the amplitude and phase). In this project, a CNN and LSTM structure was developed in Keras/Tensorflow respectively to test out the classification performance. 
+                    Radio frequency (RF) signals can be described by I/Q data (which contains information on the amplitude and phase). In this project, a CNN and LSTM structure was developed in keras/tensorflow respectively to test out the classification performance. 
                     <br>
                     <br>
-                    Signals used were of different modulations (QPSK, BPSK, 16QAM, 8PSK, DQPSK) and using raw I/Q data, the models were trained. The CNN seemed to show far superior performance compared to the LSTM and the data used was synthetically generated using MATLAB (and the RF toolbox). The confusion matrices plotted showed that there was very high classification accuracy between the 5 signals of 95%. 
+                    Signals were of different modulations (QPSK, BPSK, 16QAM, 8PSK, DQPSK) and using their raw I/Q data, the models were trained. The CNN seemed to show far superior performance compared to the LSTM and the data used was synthetically generated using MATLAB (using the RF toolbox). The confusion matrices plotted showed that there were very high classification accuracies between the 5 signals with an average of around 95%. 
                     <br>
                     <br>
                     Another idea explored was to see if the models could train on anomaly detection where one signal may be QPSK and another may be QPSK, mixed with another signal of lower intensity (an anomaly). The CNN showed superior performance to the LSTM again, and the resulting confusion matrices showed accuracies in the 92-99% region, depending on the signal pair. The code was written completely in Python, though some MATLAB was written for the synthetic signal generation.
