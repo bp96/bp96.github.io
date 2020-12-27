@@ -80,10 +80,14 @@
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title text-center">
-            PROJECTS
-          </h2>
+          <h2 class="section-title text-center">PROJECTS</h2>
 
+          <div class="section-title text-center project-row">
+            <button id="websites-btn" class="btn btn-primary btn-lg active" onclick="hideAndShowWebsites()">Websites</button>
+            <button id="data-science-btn" class="btn btn-primary btn-lg" onclick="hideAndShowDataScience()">Data Science</button>
+          </div>
+
+          <section id="data-science-section">
           <!-- Each .row is a project -->
           <div class="row project-row wow fadeInLeft">
             <div class="col-lg-4 col-sm-12">
@@ -194,44 +198,19 @@
               </div>
             </div>
           </div>
-
-
           <!-- /END Project -->
 
-                    <!-- Each .row is a project -->
-<!--           <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Google Mock-up</h3>
-                <div>
-                  <p class="mb-4">
-                    A mini fun project where I tried to replicate the appearance of the Google homepage using HTML and CSS.
-                  </p>
-                </div>
-             
-                <a target="_blank" class="cta-btn cta-btn--hero" href="x">
-                  View Code
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
-                  See Live
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/banner.png" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          END Project -->
         </div>
+          <section id="websites-section">
+            Website content to be added.
+
+          </section>
       </div>
     </section>
+
     <!-- /END Projects Section -->
+
+
 
     <!-- **** Contact Section **** -->
     <section id="contact">
@@ -268,8 +247,8 @@
               new WOW().init();
               </script>
 
-<script type="text/javascript" src="js/vanilla-tilt.js"></script>
-
+<!-- <script type="text/javascript" src="js/vanilla-tilt.js"></script> -->
+<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>
