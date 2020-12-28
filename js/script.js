@@ -1,3 +1,4 @@
+//  Select divs for websites/data science and their buttons
 let websitesElement = document.getElementById("websites-section");
 let dataScienceElement = document.getElementById("data-science-section");
 let dataScienceBtn = document.getElementById("data-science-btn");
@@ -20,9 +21,10 @@ function hideAndShowDataScience() {
 
 }
 
+// Insert tilt animation script on large devices
 if (window.screen.width > 780) {
   document.write( 
     '<script type="text/javascript" src="js/vanilla-tilt.js"></script>' 
 
-  )
+    )
 }

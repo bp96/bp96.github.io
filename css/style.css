@@ -1,3 +1,4 @@
+/* Header properties*/
 header {
   position: relative;
   background-color: black;
@@ -18,7 +19,9 @@ header h2{
   font-size: 2em;
   margin-bottom: 8em;
 }
+
 header video {
+  background-image: url("../assets/london_timelapse_fallback.jpg"); /* fallback image */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -31,6 +34,7 @@ header video {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  
 }
 
 header .container {
@@ -38,18 +42,8 @@ header .container {
   z-index: 2;
 }
 
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0;
-  z-index: 1;
-}
 
-
+/* Project row properties */
 .section-title{
   font-family: 'Roboto', sans-serif;
   padding-top: 20px;
@@ -58,8 +52,39 @@ header .overlay {
   padding-bottom: 25px;
 }
 
+.website-screenshot{
+  width: 100%;
+  height: auto;
+}
 
 
+/* Other sections - About, Contact, Footer */
+#about {
+  background-image: linear-gradient(135deg,  #000080 0%, #00cdac 100%);
+  color: #fff;
+  height: 100%;
+  border-top: 0px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  padding-bottom: 10%;
+}
+
+#contact {
+  background-color: #02aab0;
+  background-image: linear-gradient(135deg, #000080 0%, #00cdac 100%);
+  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  padding: 10rem 0 10rem 0;
+  color: #fff;
+}
+
+.footer {
+  background-color: #333333;
+  color: #fff;
+  padding: 2.8rem 0;
+}
+
+/* Image and button properties*/
 img{
   display: block;
   margin: auto;
@@ -71,36 +96,13 @@ img{
   padding: 5px;
 }
 
+/* Video attribute for cervical cancer project */
 .gtv-video{
   display: block;
   margin:auto;
 }
 
-#about {
-    background-image: linear-gradient(135deg,  #000080 0%, #00cdac 100%);
-    color: #fff;
-    height: 100%;
-    border-top: 0px;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    padding-bottom: 10%;
-}
-
-#contact {
-    background-color: #02aab0;
-    background-image: linear-gradient(135deg, #000080 0%, #00cdac 100%);
-    -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
-    padding: 10rem 0 10rem 0;
-    color: #fff;
-}
-
-.footer {
-    background-color: #333333;
-    color: #fff;
-    padding: 2.8rem 0;
-}
-
+/*Zoom properties for website screenshots*/
 .zoom {
   transition: transform .2s; /* Animation */
   margin: 0 auto;
@@ -112,10 +114,57 @@ img{
   transition-duration: 1s;
 }
 
+/* Icon and social link properties*/
+
+.social-links a {
+  flex-direction: column;
+  color: #fff;
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+  margin: 1.6rem;
+  transition: all .2s ease-in;
+}
+
+.far, .far:hover{
+  color: white;
+}
 
 
+/* Hide data science section on page load */
+#data-science-section{
+  display: none;
+}
+
+/* Define website section icon and layout properties*/
+.tech-stack-div{
+  display: flex;
+  justify-content: center;
+}
+
+.tech-icon{
+  height: 70px;
+  width: auto;
+  margin: 0 auto;
+}
+
+
+/* Styling list elements*/
+ul {
+  list-style-type: square;
+    padding-left: 15px;
+}
+
+li{
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+
+
+/* Media queries */
 @media only screen and (max-width: 768px) {
-#about {
+  #about {
     background-image: linear-gradient(135deg, #3151ED 0%, #00cdac 100%);
     color: #fff;
     height: 100%;
@@ -123,7 +172,7 @@ img{
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     padding-bottom: 10%;
-}
+  }
   header h1{
     font-size: 3em;
     text-align: right;
@@ -138,35 +187,6 @@ img{
 
   .zoom:hover {
    transform: scale(1); 
-  }
-}
-
-.social-links a {
-    flex-direction: column;
-    color: #fff;
-    font-size: 3rem;
-    width: 5rem;
-    height: 5rem;
-    margin: 1.6rem;
-    transition: all .2s ease-in;
-}
-
-#data-science-section{
-  display: none;
-}
-
-.far, .far:hover{
-  color: white;
-}
-
-.tech-stack-div{
-  display: flex;
-  justify-content: center;
-}
-
-.tech-icon{
-  height: 70px;
-  width: auto;
-  margin: 0 auto;
+ }
 }
 
