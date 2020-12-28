@@ -20,11 +20,3 @@ function hideAndShowDataScience() {
   websitesBtn.classList.remove("active");
 
 }
-
-// Insert tilt animation script on large devices
-if (window.screen.width > 780) {
-  document.write( 
-    '<script type="text/javascript" src="js/vanilla-tilt.js"></script>' 
-
-    )
-}
