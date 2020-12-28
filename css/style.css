@@ -57,6 +57,10 @@ header .container {
   height: auto;
 }
 
+.extra-bottom-padding{
+  padding-bottom: 70px;
+}
+
 
 /* Other sections - About, Contact, Footer */
 #about {
@@ -109,9 +113,9 @@ img{
 }
 
 .zoom:hover {
-  transform: scale(1.5); /* (140% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  transition-delay:0.1s;
-  transition-duration: 1s;
+  transform: scale(1.05); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
 }
 
 /* Icon and social link properties*/
