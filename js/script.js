@@ -10,6 +10,7 @@ function hideAndShowWebsites() {
 
   dataScienceBtn.classList.remove("active");
   websitesBtn.classList.add("active");
+  window.scrollBy(0, 1); // scrolls by 1 px to fix bug where projects do not appear until you scroll when switching between websites/data science
 
 }
 
@@ -18,5 +19,6 @@ function hideAndShowDataScience() {
   websitesElement.style.display = "none";
   dataScienceBtn.classList.add("active");
   websitesBtn.classList.remove("active");
+  window.scrollBy(0, 1); // scrolls by 1 px to fix bug where projects do not appear until you scroll when switching between websites/data science
 
 }
