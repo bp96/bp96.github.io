@@ -120,11 +120,61 @@
                     <img class="zoom" src="./assets/CTV_GTV_colour.jpg" />
                   </div>
                   <br />
-                  <p> Top figure and video shows the contours predicted for the GTV regions of a test MRI dataset. The DICE coefficients calculated indicate level of overlap between predictions and actual delineations with a value of 1 indicating maximum overlap. Middle figure shows the GTV (red) and CTV (yellow) delineations used for training. Bottom figure shows the overlap between the predictions (orange) and real (yellow) for the CTV region.  </p>
+                  <p><b> Top figure and video shows the contours predicted for the GTV regions of a test MRI dataset. The DICE coefficients calculated indicate level of overlap between predictions and actual delineations with a value of 1 indicating maximum overlap. Middle figure shows the GTV (red) and CTV (yellow) delineations used for training. Bottom figure shows the overlap between the predictions (orange) and real (yellow) for the CTV region. </b> </p>
                 </div>
-              </div>
+              </div> 
             </div>
             <!-- /END Project -->
+            <!-- Each .row is a project -->
+            <div class="row project-row wow fadeInLeft">
+              <div class="col-lg-4 col-sm-12">
+                <div >
+                  <h3 >Synthetic data generation, exploration and analysis</h3>
+                  <div>
+                    <p class="mb-4 ">
+                      This project involved reviewing techniques in generating synthetic data, driven by the need of sharing sensitive data for R&D purposes. The synthetic data generation tools aimed to mimic characteristics of the real dataset whilst removing or obscuring the sensitive information present within the real data. The final report was made public here on <a href="https://www.gov.uk/government/publications/synthetic-data" target="_blank">Gov.UK</a>.
+                      <br>
+                      <br>
+                      For example, we might want the synthetic data to retain the range of values of the original data with similar (but not the same) outliers. Or we might want to retain a similar frequency distribution in the synthetic and original datasets. However, this becomes more complex when we start to consider interactions between fields, or different types of data such as free text and GPS locations.
+                      <br>
+                      <br>
+                      Working in a team, I helped explore public datasets which were similar to those used by the customer and identified tools which could be used to produce synthetic data. For example, the Czech financial database comprised of numerical/categorical data was used with the Synthetic Data Vault (sdv) Python package whilst the text-based resumes/CSVs were used with Microsoft's open-source tool called "Presidio" (which was also powered by AI algorithms).
+                      <br>
+                      <br>
+                      SDV worked with relational tables and from the testing and analysi using cross-correlation heat maps and histograms, the tool produced mixed results since it only seemed to work with Gaussian-distirbuted data. This often led to odd results such as negative bank ID values - however, since the tool is open-source, it's still currently in development and the ability to specify other distributions may be added in at a later date.
+                      <br>
+                      <br>
+                      The final report can be viewed here on <a href="https://www.gov.uk/government/publications/synthetic-data" target="_blank">Gov.UK here</a>, whilst a blog article regarding this investigation can be found <a href="https://dataingovernment.blog.gov.uk/2020/08/20/synthetic-data-unlocking-the-power-of-data-and-skills-for-machine-learning/" target="_blank">here</a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div>
+                  <div>
+                    <img class="zoom" src="./assets/synthetic_data_figure_1.jpg" />
+                  </div>
+                  <br />
+                    <p><b>Summary of approach showing the components and data flow (coloured arrows), showing the process whereby synthetically-generated data is evaluated.</b></p>
+                </div>
+                <div>
+                  <div>
+                    <img class="zoom" src="./assets/synthetic_data_figure_2.jpg" />
+                  </div>
+                  <br />
+                    <p><b>An evaluation framework for synthetic data generators, consisting of six indicators.</b></p>
+                </div>
+                <div>
+                  <div>
+                    <img class="zoom" src="./assets/synthetic_data_figure_3.jpg" />
+                  </div>
+                  <br />
+                    <p><b>A comparison of how original, sensitive data would compare to synthetically-generated data.</b></p>
+                </div>
+              </div> 
+            </div>
+            <!-- /END Project -->
+
             <p style="font-size:20px" ><b>For details of other projects, please contact me using the email below.</b></p>
 
           </div>
