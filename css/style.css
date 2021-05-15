@@ -199,6 +199,12 @@ li{
    transform: scale(1); 
  }
 
+ .tech-stack-div{
+  display: flex;
+  flex-wrap: wrap;
+
+ }
+
  .tech-icon{
   max-height: 50px;
   max-width: auto;
