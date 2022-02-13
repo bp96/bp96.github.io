@@ -100,6 +100,12 @@ img{
   padding: 5px;
 }
 
+/* Remove border when button's focussed */
+#websites-btn:focus, #data-science-btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
 /* Video attribute for cervical cancer project */
 .gtv-video{
   display: block;
